@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="./images/Wr.png">
+    <link href="emailstyles.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body class="e-feed">
+    <div class="container">
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light nav-feed">
+      <div class="container-fluid">
+        <a class="navbar-brand d-none d-sm-block"> 
+          <p><strong>Dizzle Mail</strong></p>
+        </a>
+
+        <!-- Hamburger Button and W Button-->
+        <button class="btn btn-secondary dropdown-toggle m-1 d-block d-sm-none comp" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+        <button type="button" class="btn btn-primary m-1 btn-sm d-block d-sm-none comp" id="dropdownMenu2">W</button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <li><button class="dropdown-item" type="button">Switch Account</button></li>
+            <li><button class="dropdown-item" type="button">Settings</button></li>
+            <li><button class="dropdown-item" type="button">Contacts</button></li>
+            <li><button class="dropdown-item"  type="button">Inbox</button></li>
+            <li><button class="dropdown-item"  type="button">Sent</button></li>
+            <li><button class="dropdown-item"  type="button">Messages</button></li>
+            <li><button class="dropdown-item"  type="button">Inbox</button></li>
+            <li><button class="dropdown-item"  type="button">Trash</button></li>
+          </ul>
+
+          <!-- Search Bar -->
+        <form class="d-flex">
+          <input class="form-control me-2 email-feed" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-sucess" type="submit">
+            <i class="fa-solid fa-magnifying-glass" id="searchbar"></i>
+          </button>
+        </form>
+      </div>
+    </nav>  
+
+
+          <!-- MENU -->
+      <div class="row my-row m-1">
+        <div class="col-sm-2 my-col dropdown">
+         
+
+          <!-- dropdown menu -->
+          <button class="btn btn-secondary dropdown-toggle d-none d-sm-block comp" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Switch Account</button></li>
+                  <li><button class="dropdown-item" type="button">Settings</button></li>
+                  <li><button class="dropdown-item" type="button">Contacts</button></li>
+                  <li><button class="dropdown-item d-none d-sm-block d-md-none" type="button">Switch Account</button></li>
+                  <li><button class="dropdown-item d-none d-sm-block d-md-none" type="button">Settings</button></li>
+                  <li><button class="dropdown-item d-none d-sm-block d-md-none" type="button">Contacts</button></li>
+                </ul>
+                <div>
+
+                  <!-- HOME PROFILE MESSAGE  -->
+                  <div class="col d-none d-md-block mt-5 m-1">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action menu" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"><i class="fa-solid fa-inbox"></i>
+                          Inbox</a>
+                        <a class="list-group-item list-group-item-action menu" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><i class="fa-solid fa-paper-plane"></i>
+                          Sent</a>
+                        <a class="list-group-item list-group-item-action menu" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages"><i class="fa-solid fa-message m-1"></i></i>Messages</a>
+                        <a class="list-group-item list-group-item-action menu" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+                          <i class="fa-solid fa-trash m-1"></i>Trash</a>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"></div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"></div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"></div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"></div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Compose Button -->
+                  <button type="button" class="btn btn-primary btn-lg mt-5 d-none d-md-block comp" id="dropdownMenu2">
+                    compose 
+                  </button>
+
+                  <button type="button" class="btn btn-primary btn-sm mt-5 d-none d-sm-block d-md-none comp" id="dropdownMenu2">
+                    compose 
+                  </button>
+
+                  <button type="button" class="btn btn-primary btn-lg mt-5 d-none d-md-block comp" id="dropdownMenu2">
+                    W
+                  </button>
+
+                  <button type="button" class="btn btn-primary btn mt-5 d-none d-sm-block d-md-none comp" id="dropdownMenu2">
+                    W
+                  </button>   
+        </div>
+
+
+        <!-- EMAIL FEED -->
+        <div class="col-12 col-sm-10 col-lg-4 my-col p-3 mb-2 text-dark e-feed">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action mt-1 mb-1 email-feed" aria-current="true">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Vanessa Farmer</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  
+                  <h6 class="mb-1">Email Project</h6>
+                  <small>Good job, I know you're going through it but good job.</small>
+
+                  <ul class="list-group" id="checkbox">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-0" type="checkbox" value="" aria-label="...">
+                    </li>
+                  </ul>
+                </a>
+
+
+                <a href="#" class="list-group-item list-group-item-action mt-1 mb-1 email-feed">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Beriadann</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <h6 class="mb-1">Game Time</h6>
+                  <small class="text-muted">Wanna Apex or Call of Duty?</small>
+
+                  <ul class="list-group" id="checkbox">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-0" type="checkbox" value="" aria-label="...">
+                    </li>
+                  </ul>
+                </a>
+
+
+                <a href="#" class="list-group-item list-group-item-action mt-1 mb-1 email-feed">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Dave Phanh</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <h6 class="mb-1">BIG MAN!!!</h6>
+                  <small class="text-muted">I got some tickets for the basketball game. Want to come?</small>
+
+                  <ul class="list-group" id="checkbox">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-0" type="checkbox" value="" aria-label="...">
+                    </li>
+                  </ul>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action mt-1 mb-1 email-feed">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Beriadann</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <h6 class="mb-1">Game Time</h6>
+                  <small class="text-muted">Wanna Apex or Call of Duty?</small>
+
+                  <ul class="list-group" id="checkbox">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-0" type="checkbox" value="" aria-label="...">
+                    </li>
+                  </ul>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action mt-1 mb-1 email-feed">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Dave Phanh</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <h6 class="mb-1">BIG MAN!!!</h6>
+                  <small class="text-muted">I got some tickets for the basketball game. Want to come?</small>
+
+                  <ul class="list-group" id="checkbox">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-0" type="checkbox" value="" aria-label="...">
+                    </li>
+                  </ul>
+                </a>
+      
+      
+                <!-- EMAIL FEED VISIBLE ONLY SMALL -->
+                <a href="#" class="list-group-item list-group-item-action mt-1 mb-1 d-block d-sm-none email-feed">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Dave Phanh</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <h6 class="mb-1">BIG MAN!!!</h6>
+                  <small class="text-muted">I got some tickets for the basketball game. Want to come?</small>
+
+                  <ul class="list-group" id="checkbox">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-0" type="checkbox" value="" aria-label="...">
+                    </li>
+                  </ul>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action mt-1 mb-1 d-block d-sm-none email-feed">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Dave Phanh</h5>
+                    <small class="text-muted">3 days ago</small>
+                  </div>
+                  <h6 class="mb-1">BIG MAN!!!</h6>
+                  <small class="text-muted">I got some tickets for the basketball game. Want to come?</small>
+
+                  <ul class="list-group" id="checkbox">
+                    <li class="list-group-item">
+                      <input class="form-check-input me-0" type="checkbox" value="" aria-label="...">
+                    </li>
+                  </ul>
+                </a>
+              </div>
+        </div>
+        
+<!-- Compose Email -->
+        <div class="col-sm-6 my-col d-none d-lg-block">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><strong>From: Bay Valley Tech</strong></label>
+                <textarea class="form-control textbox email-feed" id="exampleFormControlTextarea1" > Dear Ramos;
+
+  Message me as soon as possible. It is urgent that you see this message in time. You have just received your internship acceptance to BVT! Congratulations! Looking forward to seeing you soon!
+
+   Sincerely,
+      BVT
+                </textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control email-feed" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Reply
+                </label>
+                <textarea class="form-control textbox email-feed" id="exampleFormControlTextarea1" ></textarea>
+              </div>
+        </div>
+      </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/89818737d3.js" crossorigin="anonymous"></script>
+</body>
+</html>
